@@ -19,7 +19,9 @@ from django.urls import path
 
 from nucleo import views
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('saludar/', views.saludar )
+    path('saludar/', views.saludar ),
+    path('saluda_-etiqueta/', views.saludar_etiqueta)
 ]

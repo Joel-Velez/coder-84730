@@ -5,3 +5,5 @@ from django.shortcuts import render
 
 def saludar (request):
     return HttpResponse('Hola desde Django!')
+def saludar_etiqueta(request):
+    return HttpResponse('<h1> hola desde la app</h1>')
