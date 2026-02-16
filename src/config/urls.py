@@ -23,5 +23,7 @@ from nucleo import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('saludar/', views.saludar ),
-    path('saluda_-etiqueta/', views.saludar_etiqueta)
+    path('saluda_etiqueta/', views.saludar_etiqueta),
+    path('', views.index),
+    path('dado/', views.tirar_dado),
 ]
