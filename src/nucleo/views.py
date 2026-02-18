@@ -28,3 +28,7 @@ def tirar_dado(request):
         'fecha': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     }
     return render(request, 'nucleo/dado.html', datos)
+
+def notas(request):
+    mis_notas = [21, 12, 3, 4, 5, 6, 7, 8, 9, 10]
+    return render(request, 'nucleo/notas.html', {'notas': mis_notas})

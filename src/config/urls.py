@@ -26,4 +26,5 @@ urlpatterns = [
     path('saluda_etiqueta/', views.saludar_etiqueta),
     path('', views.index),
     path('dado/', views.tirar_dado),
+    path('notas/', views.notas),
 ]
