@@ -21,11 +21,12 @@ from nucleo import views
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('saludar/', views.saludar ),
-    path('saluda_etiqueta/', views.saludar_etiqueta),
-    path('', include('nucleo.urls')),
-    path('dado/', views.tirar_dado),
+    path('admin/', admin.site.urls), #prueba
+    path('saludar/', views.saludar ), #prueba
+    path('saluda_etiqueta/', views.saludar_etiqueta), #prueba
+    path('dado/', views.tirar_dado), #prueba
     path('notas/', views.notas),
+    path('', include('nucleo.urls')),
     path('producto/', include('producto.urls')),
 ]
+    
