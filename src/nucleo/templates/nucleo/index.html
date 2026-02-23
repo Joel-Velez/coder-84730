@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-</head>
-<body>
-    <h1> {{ titulo }}</h1>
-    <h2>framework de python</h2>
-    <p>Hay Miles de herramientas, para que querer inventar la rueda!!   </p>
-    <a href="{% url 'producto:lista' %}">Lista de Productos</a>
-</body>
-</html>
+{% extends 'nucleo/base.html' %}
+
+{% load static %}
+{% block titulo %}
+    <p>{{ titulo }}</p>
+{% endblock titulo %}
+
+{% block main %}
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAJzYlIB5o12UgXMRQctViecyQUYK50By94g&s" alt="imagen representativa de python y django"
+        width="60%", height="200px", align="center" />
+    <img src="{% static 'nucleo/img/descarga.png' %}" alt="imagen representativa de python y django"
+{% endblock main %}
+
